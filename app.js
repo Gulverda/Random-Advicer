@@ -5,6 +5,7 @@ quoteBtn = document.querySelector("button");
 soundBtn = document.querySelector(".sound");
 copyBtn = document.querySelector(".copy");
 twitterBtn = document.querySelector(".twitter");
+facebookBtn = document.querySelector(".facebook");
 
 
 
@@ -68,6 +69,12 @@ twitterBtn.addEventListener('click', () => {
     //ტვიტერის გახსნა ახალ ფანჯარაში
     window.open(tweetUrl, "_blank"); 
 });
+// facebookBtn.addEventListener('click', () => {
+//     //facebook-ის დამატება
+//     let facebookUrl = `https://www.facebook.com/index.php=${quoteText.innerText} by ${authorName.innerText}`;
+//     //facebook-ის გახსნა ახალ ფანჯარაში
+//     window.open(facebookUrl, "_blank"); 
+// });
 
 //ავტომატურად გამოვიძახეთ ფუნქცია
 quoteBtn.addEventListener('click', randomQuote);
