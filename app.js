@@ -30,15 +30,20 @@ twitterBtn = document.querySelector(".twitter");
 function randomQuote(){
     quoteBtn.classList.add('loading');
     quoteBtn.innerText = 'Loading...';
+    //ფუნქციის გამოძახება
     fetch('https://api.quotable.io/random')
     .then(response => response.json())
+    //მონაცემების დამატება
     .then(data => {
+        //მონაცემების დაბეჭდვა
         console.log(data);
         quoteText.innerText = data.content;
         authorName.innerText = data.author;
+        //განვსაზღვრავთ ცვლადს
         quoteBtn.classList.remove("loading");
         quoteBtn.innerText = "New Quote";
     })
+    //შეცდომის დამატება
     .catch(error => {
         console.error(error);
     });
@@ -64,4 +69,5 @@ twitterBtn.addEventListener('click', () => {
     window.open(tweetUrl, "_blank"); 
 });
 
+//ავტომატურად გამოვიძახეთ ფუნქცია
 quoteBtn.addEventListener('click', randomQuote);
