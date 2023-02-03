@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --primary-color: #143d59;
+    --secondary-color: #f4b41a;
+}
 *{
     margin: 0;
     padding: 0;
@@ -10,17 +14,17 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #5b0e2d;
+    background: var(--primary-color);
 }
 .wrapper{
     width: 605px;
-    background: #ffa781;
+    background: var(--secondary-color);
     border-radius: 15px;
     padding: 30px 30px 25px;
 }
 .wrapper header{
     font-family: 'Poppins', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
 }
@@ -43,15 +47,15 @@ body{
     margin: 0 0 3px 10px;
 }
 .quote-area .quote{
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
     word-break: break-all;
 }
 .quote-area p{
-    color: #5b0e2d;
+    color: var(--primary-color);
 }
 .quote-area i{
-    color: #5b0e2d;
+    color: var(--primary-color);
 }
 .content .author{
     display: flex;
@@ -61,7 +65,7 @@ body{
     justify-content: flex-end;
 }
 .author p{
-    color: #5b0e2d;
+    color: var(--primary-color);
     margin: -12px 5px;
 }
 .author span:first-child{
@@ -69,7 +73,7 @@ body{
     font-family: monospace;
 }
 .wrapper .buttons{
-    border-top: 1px solid #5b0e2d;
+    border-top: 1px solid var(--primary-color);
 }
 .buttons .features{
     display: flex;
@@ -87,29 +91,29 @@ body{
     margin: 0 5px;
     height: 47px;
     width: 47px;
-    border: 2px solid #5b0e2d;
-    color: #5b0e2d;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    border: 2px solid #5b0e2d;
+    border: 2px solid var(--primary-color);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .features ul li:hover{
-    background: #5b0e2d;
-    color: #ffa781;
+    background: var(--primary-color);
+    color: var(--secondary-color);
 }
 .features button{
     border: none;
     outline: none;
-    color: #ffa781;
+    color: var(--secondary-color);
     cursor: pointer;
     font-style: 16px;
     padding: 13px 22px;
     border-radius: 30px;
-    background: #5b0e2d;
+    background: var(--primary-color);
 }
 button.loading{
     opacity: 0.7;
